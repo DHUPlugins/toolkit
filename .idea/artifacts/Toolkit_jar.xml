@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Toolkit:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Toolkit_jar</output-path>
+    <root id="archive" name="Toolkit.jar">
+      <element id="module-output" name="Toolkit" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../craftbukkit-1.8.8.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

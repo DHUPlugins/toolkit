@@ -1,0 +1,81 @@
+name: Toolkit
+author: Jack Dalton
+main: co.jackdalton.toolkit.toolkit
+version: 0.0.8
+commands:
+  forcetp:
+    description: Teleport to a player whether or not they are in /v.
+    usage: /forcetp <player>
+    permission: tk.forcetp
+  checkop:
+    description: Check whether a player is op.
+    usage: /checkop <player>
+    permission: tk.checkop
+  getgamemode:
+    description: View a player's current gamemode.
+    usage: /getgamemode <player>
+    permission: tk.getgm
+  totalnick:
+    description: Set a nickname, without the ~
+    usage: /totalnick <nickname|off>
+    permission: tk.totalnick
+  reallist:
+    description: View all players, regardless of /v.
+    usage: /reallist
+    permission: tk.reallist
+  forcemsg:
+    description: Message a player in /v
+    usage: /forcemsg <player> <msg>
+    permission: tk.forcemsg
+  toolkit:
+    description: View the Toolkit help dialogue.
+    usage: /toolkit
+    permission: tk.toolkit
+  checkperm:
+    description: Check whether a player has a given permission.
+    usage: /checkperm <player> <permission>
+    permission: tk.checkperm
+  getflyers:
+    description: Get a list of players currently flying.
+    usage: /getflyers
+    permission: tk.getflyers
+  getcoords:
+    description: Gets the coordinates of a given player.
+    usage: /getcoords <player>
+    permission: tk.getcoords
+  getworld:
+    description: Gets the current world of a given player.
+    usage: /getworld <player>
+    permission: tk.getworld
+permissions:
+  tk.*:
+    description: Gives access to all Toolkit commands.
+    children:
+      tk.forcetp: true
+      tk.totalnick: true
+      tk.reallist: true
+      tk.forcemsg: true
+      tk.toolkit: true
+      tk.getcoords: true
+      tk.getflyers: true
+      tk.getworld: true
+      tk.checkperm: true
+      tk.getgm: true
+  tk.forcetp:
+    description: Teleport to a player regardless of whether they are in /v.
+  tk.getgm:
+    description: View a player's current gamemode.
+  tk.totalnick:
+    description: Set a nickname, without the ~
+  tk.reallist:
+    description: View all players, regardless of /v.
+  tk.toolkit:
+    description: View the Toolkit help dialogue.
+  tk.checkperm:
+    description: Check whether a player has a given permission.
+  tk.getflyers:
+    description: Get a list of players currently flying.
+  tk.getcoords:
+    description: Gets the coordinates of a given player.
+  tk.getworld:
+    description: Gets the current world of a given player.
